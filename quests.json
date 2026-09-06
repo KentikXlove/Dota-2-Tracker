@@ -1,0 +1,50 @@
+[
+  {
+    "id": "kill_5",
+    "hero_id": null,
+    "description": "Убейте 5 врагов в одном матче на {hero_name}",
+    "requirement": {"kills": 5},
+    "difficulty": "lite",
+    "reward_exp": 30
+  },
+  {
+    "id": "kill_10",
+    "hero_id": null,
+    "description": "Убейте 10 врагов в одном матче на {hero_name}",
+    "requirement": {"kills": 10},
+    "difficulty": "hard",
+    "reward_exp": 60
+  },
+  {
+    "id": "win_2",
+    "hero_id": null,
+    "description": "Одержите 2 победы на {hero_name} за день",
+    "requirement": {"wins": 2},
+    "difficulty": "lite",
+    "reward_exp": 40
+  },
+  {
+    "id": "win_series_2",
+    "hero_id": null,
+    "description": "Сделайте серию из 2 побед подряд на {hero_name}",
+    "requirement": {"win_series": 2},
+    "difficulty": "hard",
+    "reward_exp": 70
+  },
+  {
+    "id": "win_series_3",
+    "hero_id": null,
+    "description": "Сделайте серию из 3 побед подряд на {hero_name}",
+    "requirement": {"win_series": 3},
+    "difficulty": "impossible",
+    "reward_exp": 100
+  },
+  {
+    "id": "kill_15",
+    "hero_id": null,
+    "description": "Убейте 15 врагов в одном матче на {hero_name}",
+    "requirement": {"kills": 15},
+    "difficulty": "impossible",
+    "reward_exp": 120
+  }
+]
