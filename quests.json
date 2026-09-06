@@ -1,50 +1,132 @@
 [
-  {
-    "id": "kill_5",
-    "hero_id": null,
-    "description": "Убейте 5 врагов в одном матче на {hero_name}",
-    "requirement": {"kills": 5},
-    "difficulty": "lite",
-    "reward_exp": 30
-  },
-  {
-    "id": "kill_10",
-    "hero_id": null,
-    "description": "Убейте 10 врагов в одном матче на {hero_name}",
-    "requirement": {"kills": 10},
-    "difficulty": "hard",
-    "reward_exp": 60
-  },
-  {
-    "id": "win_2",
-    "hero_id": null,
-    "description": "Одержите 2 победы на {hero_name} за день",
-    "requirement": {"wins": 2},
-    "difficulty": "lite",
-    "reward_exp": 40
-  },
-  {
-    "id": "win_series_2",
-    "hero_id": null,
-    "description": "Сделайте серию из 2 побед подряд на {hero_name}",
-    "requirement": {"win_series": 2},
-    "difficulty": "hard",
-    "reward_exp": 70
-  },
-  {
-    "id": "win_series_3",
-    "hero_id": null,
-    "description": "Сделайте серию из 3 побед подряд на {hero_name}",
-    "requirement": {"win_series": 3},
-    "difficulty": "impossible",
-    "reward_exp": 100
-  },
-  {
-    "id": "kill_15",
-    "hero_id": null,
-    "description": "Убейте 15 врагов в одном матче на {hero_name}",
-    "requirement": {"kills": 15},
-    "difficulty": "impossible",
-    "reward_exp": 120
-  }
+  {"id": "carry_kill_5", "role": "carry", "description": "Убейте 5 врагов в одном матче на {hero_name}", "requirement": {"kills": {"gt": 5}}, "difficulty": "lite", "reward_exp": 20},
+  {"id": "carry_kill_8", "role": "carry", "description": "Убейте 8 врагов в одном матче на {hero_name}", "requirement": {"kills": {"gt": 8}}, "difficulty": "lite", "reward_exp": 30},
+  {"id": "carry_kill_10", "role": "carry", "description": "Убейте 10 врагов в одном матче на {hero_name}", "requirement": {"kills": {"gt": 10}}, "difficulty": "lite", "reward_exp": 40},
+  {"id": "carry_kill_12", "role": "carry", "description": "Убейте 12 врагов в одном матче на {hero_name}", "requirement": {"kills": {"gt": 12}}, "difficulty": "hard", "reward_exp": 55},
+  {"id": "carry_kill_15", "role": "carry", "description": "Убейте 15 врагов в одном матче на {hero_name}", "requirement": {"kills": {"gt": 15}}, "difficulty": "hard", "reward_exp": 70},
+  {"id": "carry_kill_18", "role": "carry", "description": "Убейте 18 врагов в одном матче на {hero_name}", "requirement": {"kills": {"gt": 18}}, "difficulty": "hard", "reward_exp": 85},
+  {"id": "carry_kill_20", "role": "carry", "description": "Убейте 20 врагов в одном матче на {hero_name}", "requirement": {"kills": {"gt": 20}}, "difficulty": "impossible", "reward_exp": 110},
+  {"id": "carry_kill_25", "role": "carry", "description": "Убейте 25 врагов в одном матче на {hero_name}", "requirement": {"kills": {"gt": 25}}, "difficulty": "impossible", "reward_exp": 140},
+  
+  {"id": "carry_deaths_lt_5", "role": "carry", "description": "Умрите менее 5 раз в матче на {hero_name}", "requirement": {"deaths": {"lt": 5}}, "difficulty": "lite", "reward_exp": 25},
+  {"id": "carry_deaths_lt_3", "role": "carry", "description": "Умрите менее 3 раз в матче на {hero_name}", "requirement": {"deaths": {"lt": 3}}, "difficulty": "hard", "reward_exp": 50},
+  {"id": "carry_deaths_lt_2", "role": "carry", "description": "Умрите менее 2 раз в матче на {hero_name}", "requirement": {"deaths": {"lt": 2}}, "difficulty": "impossible", "reward_exp": 80},
+  
+  {"id": "carry_assist_5", "role": "carry", "description": "Сделайте 5 ассистов в матче на {hero_name}", "requirement": {"assists": {"gt": 5}}, "difficulty": "lite", "reward_exp": 20},
+  {"id": "carry_assist_8", "role": "carry", "description": "Сделайте 8 ассистов в матче на {hero_name}", "requirement": {"assists": {"gt": 8}}, "difficulty": "hard", "reward_exp": 45},
+  {"id": "carry_assist_12", "role": "carry", "description": "Сделайте 12 ассистов в матче на {hero_name}", "requirement": {"assists": {"gt": 12}}, "difficulty": "impossible", "reward_exp": 70},
+  
+  {"id": "carry_networth_15k", "role": "carry", "description": "Заработайте 15000 золота в матче на {hero_name}", "requirement": {"net_worth": {"gt": 15000}}, "difficulty": "lite", "reward_exp": 35},
+  {"id": "carry_networth_20k", "role": "carry", "description": "Заработайте 20000 золота в матче на {hero_name}", "requirement": {"net_worth": {"gt": 20000}}, "difficulty": "hard", "reward_exp": 60},
+  {"id": "carry_networth_25k", "role": "carry", "description": "Заработайте 25000 золота в матче на {hero_name}", "requirement": {"net_worth": {"gt": 25000}}, "difficulty": "hard", "reward_exp": 80},
+  {"id": "carry_networth_30k", "role": "carry", "description": "Заработайте 30000 золота в матче на {hero_name}", "requirement": {"net_worth": {"gt": 30000}}, "difficulty": "impossible", "reward_exp": 120},
+  {"id": "carry_networth_35k", "role": "carry", "description": "Заработайте 35000 золота в матче на {hero_name}", "requirement": {"net_worth": {"gt": 35000}}, "difficulty": "impossible", "reward_exp": 150},
+  
+  {"id": "carry_xp_15k", "role": "carry", "description": "Заработайте 15000 опыта в матче на {hero_name}", "requirement": {"xp": {"gt": 15000}}, "difficulty": "lite", "reward_exp": 30},
+  {"id": "carry_xp_20k", "role": "carry", "description": "Заработайте 20000 опыта в матче на {hero_name}", "requirement": {"xp": {"gt": 20000}}, "difficulty": "hard", "reward_exp": 55},
+  {"id": "carry_xp_25k", "role": "carry", "description": "Заработайте 25000 опыта в матче на {hero_name}", "requirement": {"xp": {"gt": 25000}}, "difficulty": "hard", "reward_exp": 75},
+  {"id": "carry_xp_30k", "role": "carry", "description": "Заработайте 30000 опыта в матче на {hero_name}", "requirement": {"xp": {"gt": 30000}}, "difficulty": "impossible", "reward_exp": 110},
+  
+  {"id": "carry_combo_1", "role": "carry", "description": "Убейте 10 врагов, умрите менее 4 раз и сделайте 8 ассистов на {hero_name}", "requirement": {"kills": {"gt": 10}, "deaths": {"lt": 4}, "assists": {"gt": 8}}, "difficulty": "hard", "reward_exp": 80},
+  {"id": "carry_combo_2", "role": "carry", "description": "Убейте 15 врагов, умрите менее 3 раз и заработайте 20000 золота на {hero_name}", "requirement": {"kills": {"gt": 15}, "deaths": {"lt": 3}, "net_worth": {"gt": 20000}}, "difficulty": "hard", "reward_exp": 90},
+  {"id": "carry_combo_3", "role": "carry", "description": "Убейте 20 врагов, умрите менее 2 раз и заработайте 25000 золота на {hero_name}", "requirement": {"kills": {"gt": 20}, "deaths": {"lt": 2}, "net_worth": {"gt": 25000}}, "difficulty": "impossible", "reward_exp": 140},
+  {"id": "carry_combo_4", "role": "carry", "description": "Убейте 12 врагов, сделайте 10 ассистов и заработайте 18000 опыта на {hero_name}", "requirement": {"kills": {"gt": 12}, "assists": {"gt": 10}, "xp": {"gt": 18000}}, "difficulty": "hard", "reward_exp": 85},
+  {"id": "carry_combo_5", "role": "carry", "description": "Убейте 18 врагов, умрите менее 3 раз и заработайте 28000 опыта на {hero_name}", "requirement": {"kills": {"gt": 18}, "deaths": {"lt": 3}, "xp": {"gt": 28000}}, "difficulty": "impossible", "reward_exp": 130},
+  
+  {"id": "support_assist_8", "role": "support", "description": "Сделайте 8 ассистов в матче на {hero_name}", "requirement": {"assists": {"gt": 8}}, "difficulty": "lite", "reward_exp": 25},
+  {"id": "support_assist_10", "role": "support", "description": "Сделайте 10 ассистов в матче на {hero_name}", "requirement": {"assists": {"gt": 10}}, "difficulty": "lite", "reward_exp": 35},
+  {"id": "support_assist_12", "role": "support", "description": "Сделайте 12 ассистов в матче на {hero_name}", "requirement": {"assists": {"gt": 12}}, "difficulty": "hard", "reward_exp": 50},
+  {"id": "support_assist_15", "role": "support", "description": "Сделайте 15 ассистов в матче на {hero_name}", "requirement": {"assists": {"gt": 15}}, "difficulty": "hard", "reward_exp": 65},
+  {"id": "support_assist_18", "role": "support", "description": "Сделайте 18 ассистов в матче на {hero_name}", "requirement": {"assists": {"gt": 18}}, "difficulty": "hard", "reward_exp": 80},
+  {"id": "support_assist_20", "role": "support", "description": "Сделайте 20 ассистов в матче на {hero_name}", "requirement": {"assists": {"gt": 20}}, "difficulty": "impossible", "reward_exp": 110},
+  {"id": "support_assist_25", "role": "support", "description": "Сделайте 25 ассистов в матче на {hero_name}", "requirement": {"assists": {"gt": 25}}, "difficulty": "impossible", "reward_exp": 140},
+  
+  {"id": "support_deaths_lt_6", "role": "support", "description": "Умрите менее 6 раз в матче на {hero_name}", "requirement": {"deaths": {"lt": 6}}, "difficulty": "lite", "reward_exp": 20},
+  {"id": "support_deaths_lt_4", "role": "support", "description": "Умрите менее 4 раз в матче на {hero_name}", "requirement": {"deaths": {"lt": 4}}, "difficulty": "hard", "reward_exp": 45},
+  {"id": "support_deaths_lt_3", "role": "support", "description": "Умрите менее 3 раз в матче на {hero_name}", "requirement": {"deaths": {"lt": 3}}, "difficulty": "hard", "reward_exp": 60},
+  {"id": "support_deaths_lt_2", "role": "support", "description": "Умрите менее 2 раз в матче на {hero_name}", "requirement": {"deaths": {"lt": 2}}, "difficulty": "impossible", "reward_exp": 90},
+  
+  {"id": "support_kill_3", "role": "support", "description": "Убейте 3 врагов в матче на {hero_name}", "requirement": {"kills": {"gt": 3}}, "difficulty": "lite", "reward_exp": 20},
+  {"id": "support_kill_5", "role": "support", "description": "Убейте 5 врагов в матче на {hero_name}", "requirement": {"kills": {"gt": 5}}, "difficulty": "lite", "reward_exp": 30},
+  {"id": "support_kill_8", "role": "support", "description": "Убейте 8 врагов в матче на {hero_name}", "requirement": {"kills": {"gt": 8}}, "difficulty": "hard", "reward_exp": 50},
+  {"id": "support_kill_10", "role": "support", "description": "Убейте 10 врагов в матче на {hero_name}", "requirement": {"kills": {"gt": 10}}, "difficulty": "impossible", "reward_exp": 80},
+  
+  {"id": "support_networth_10k", "role": "support", "description": "Заработайте 10000 золота в матче на {hero_name}", "requirement": {"net_worth": {"gt": 10000}}, "difficulty": "lite", "reward_exp": 30},
+  {"id": "support_networth_12k", "role": "support", "description": "Заработайте 12000 золота в матче на {hero_name}", "requirement": {"net_worth": {"gt": 12000}}, "difficulty": "hard", "reward_exp": 50},
+  {"id": "support_networth_15k", "role": "support", "description": "Заработайте 15000 золота в матче на {hero_name}", "requirement": {"net_worth": {"gt": 15000}}, "difficulty": "hard", "reward_exp": 65},
+  {"id": "support_networth_18k", "role": "support", "description": "Заработайте 18000 золота в матче на {hero_name}", "requirement": {"net_worth": {"gt": 18000}}, "difficulty": "impossible", "reward_exp": 90},
+  
+  {"id": "support_xp_12k", "role": "support", "description": "Заработайте 12000 опыта в матче на {hero_name}", "requirement": {"xp": {"gt": 12000}}, "difficulty": "lite", "reward_exp": 25},
+  {"id": "support_xp_15k", "role": "support", "description": "Заработайте 15000 опыта в матче на {hero_name}", "requirement": {"xp": {"gt": 15000}}, "difficulty": "hard", "reward_exp": 45},
+  {"id": "support_xp_18k", "role": "support", "description": "Заработайте 18000 опыта в матче на {hero_name}", "requirement": {"xp": {"gt": 18000}}, "difficulty": "hard", "reward_exp": 60},
+  {"id": "support_xp_22k", "role": "support", "description": "Заработайте 22000 опыта в матче на {hero_name}", "requirement": {"xp": {"gt": 22000}}, "difficulty": "impossible", "reward_exp": 90},
+  
+  {"id": "support_combo_1", "role": "support", "description": "Сделайте 12 ассистов, умрите менее 5 раз и убейте 5 врагов на {hero_name}", "requirement": {"assists": {"gt": 12}, "deaths": {"lt": 5}, "kills": {"gt": 5}}, "difficulty": "hard", "reward_exp": 70},
+  {"id": "support_combo_2", "role": "support", "description": "Сделайте 15 ассистов, умрите менее 4 раз и заработайте 12000 золота на {hero_name}", "requirement": {"assists": {"gt": 15}, "deaths": {"lt": 4}, "net_worth": {"gt": 12000}}, "difficulty": "hard", "reward_exp": 80},
+  {"id": "support_combo_3", "role": "support", "description": "Сделайте 20 ассистов, умрите менее 3 раз и заработайте 15000 опыта на {hero_name}", "requirement": {"assists": {"gt": 20}, "deaths": {"lt": 3}, "xp": {"gt": 15000}}, "difficulty": "impossible", "reward_exp": 120},
+  {"id": "support_combo_4", "role": "support", "description": "Убейте 8 врагов, сделайте 10 ассистов и умрите менее 5 раз на {hero_name}", "requirement": {"kills": {"gt": 8}, "assists": {"gt": 10}, "deaths": {"lt": 5}}, "difficulty": "hard", "reward_exp": 75},
+  {"id": "support_combo_5", "role": "support", "description": "Убейте 10 врагов, сделайте 15 ассистов и заработайте 18000 золота на {hero_name}", "requirement": {"kills": {"gt": 10}, "assists": {"gt": 15}, "net_worth": {"gt": 18000}}, "difficulty": "impossible", "reward_exp": 130},
+  
+  {"id": "mid_kill_6", "role": "mid", "description": "Убейте 6 врагов в матче на {hero_name}", "requirement": {"kills": {"gt": 6}}, "difficulty": "lite", "reward_exp": 25},
+  {"id": "mid_kill_8", "role": "mid", "description": "Убейте 8 врагов в матче на {hero_name}", "requirement": {"kills": {"gt": 8}}, "difficulty": "lite", "reward_exp": 35},
+  {"id": "mid_kill_10", "role": "mid", "description": "Убейте 10 врагов в матче на {hero_name}", "requirement": {"kills": {"gt": 10}}, "difficulty": "hard", "reward_exp": 50},
+  {"id": "mid_kill_12", "role": "mid", "description": "Убейте 12 врагов в матче на {hero_name}", "requirement": {"kills": {"gt": 12}}, "difficulty": "hard", "reward_exp": 65},
+  {"id": "mid_kill_15", "role": "mid", "description": "Убейте 15 врагов в матче на {hero_name}", "requirement": {"kills": {"gt": 15}}, "difficulty": "hard", "reward_exp": 80},
+  {"id": "mid_kill_18", "role": "mid", "description": "Убейте 18 врагов в матче на {hero_name}", "requirement": {"kills": {"gt": 18}}, "difficulty": "impossible", "reward_exp": 110},
+  {"id": "mid_kill_22", "role": "mid", "description": "Убейте 22 врагов в матче на {hero_name}", "requirement": {"kills": {"gt": 22}}, "difficulty": "impossible", "reward_exp": 140},
+  
+  {"id": "mid_deaths_lt_5", "role": "mid", "description": "Умрите менее 5 раз в матче на {hero_name}", "requirement": {"deaths": {"lt": 5}}, "difficulty": "lite", "reward_exp": 25},
+  {"id": "mid_deaths_lt_3", "role": "mid", "description": "Умрите менее 3 раз в матче на {hero_name}", "requirement": {"deaths": {"lt": 3}}, "difficulty": "hard", "reward_exp": 50},
+  {"id": "mid_deaths_lt_2", "role": "mid", "description": "Умрите менее 2 раз в матче на {hero_name}", "requirement": {"deaths": {"lt": 2}}, "difficulty": "impossible", "reward_exp": 80},
+  
+  {"id": "mid_assist_6", "role": "mid", "description": "Сделайте 6 ассистов в матче на {hero_name}", "requirement": {"assists": {"gt": 6}}, "difficulty": "lite", "reward_exp": 20},
+  {"id": "mid_assist_8", "role": "mid", "description": "Сделайте 8 ассистов в матче на {hero_name}", "requirement": {"assists": {"gt": 8}}, "difficulty": "hard", "reward_exp": 45},
+  {"id": "mid_assist_10", "role": "mid", "description": "Сделайте 10 ассистов в матче на {hero_name}", "requirement": {"assists": {"gt": 10}}, "difficulty": "hard", "reward_exp": 60},
+  {"id": "mid_assist_12", "role": "mid", "description": "Сделайте 12 ассистов в матче на {hero_name}", "requirement": {"assists": {"gt": 12}}, "difficulty": "impossible", "reward_exp": 90},
+  
+  {"id": "mid_networth_15k", "role": "mid", "description": "Заработайте 15000 золота в матче на {hero_name}", "requirement": {"net_worth": {"gt": 15000}}, "difficulty": "lite", "reward_exp": 35},
+  {"id": "mid_networth_18k", "role": "mid", "description": "Заработайте 18000 золота в матче на {hero_name}", "requirement": {"net_worth": {"gt": 18000}}, "difficulty": "hard", "reward_exp": 55},
+  {"id": "mid_networth_22k", "role": "mid", "description": "Заработайте 22000 золота в матче на {hero_name}", "requirement": {"net_worth": {"gt": 22000}}, "difficulty": "hard", "reward_exp": 75},
+  {"id": "mid_networth_28k", "role": "mid", "description": "Заработайте 28000 золота в матче на {hero_name}", "requirement": {"net_worth": {"gt": 28000}}, "difficulty": "impossible", "reward_exp": 120},
+  
+  {"id": "mid_xp_15k", "role": "mid", "description": "Заработайте 15000 опыта в матче на {hero_name}", "requirement": {"xp": {"gt": 15000}}, "difficulty": "lite", "reward_exp": 30},
+  {"id": "mid_xp_18k", "role": "mid", "description": "Заработайте 18000 опыта в матче на {hero_name}", "requirement": {"xp": {"gt": 18000}}, "difficulty": "hard", "reward_exp": 50},
+  {"id": "mid_xp_22k", "role": "mid", "description": "Заработайте 22000 опыта в матче на {hero_name}", "requirement": {"xp": {"gt": 22000}}, "difficulty": "hard", "reward_exp": 70},
+  {"id": "mid_xp_28k", "role": "mid", "description": "Заработайте 28000 опыта в матче на {hero_name}", "requirement": {"xp": {"gt": 28000}}, "difficulty": "impossible", "reward_exp": 110},
+  
+  {"id": "mid_combo_1", "role": "mid", "description": "Убейте 10 врагов, умрите менее 4 раз и сделайте 6 ассистов на {hero_name}", "requirement": {"kills": {"gt": 10}, "deaths": {"lt": 4}, "assists": {"gt": 6}}, "difficulty": "hard", "reward_exp": 70},
+  {"id": "mid_combo_2", "role": "mid", "description": "Убейте 12 врагов, умрите менее 3 раз и заработайте 18000 золота на {hero_name}", "requirement": {"kills": {"gt": 12}, "deaths": {"lt": 3}, "net_worth": {"gt": 18000}}, "difficulty": "hard", "reward_exp": 85},
+  {"id": "mid_combo_3", "role": "mid", "description": "Убейте 15 врагов, умрите менее 2 раз и заработайте 22000 опыта на {hero_name}", "requirement": {"kills": {"gt": 15}, "deaths": {"lt": 2}, "xp": {"gt": 22000}}, "difficulty": "impossible", "reward_exp": 130},
+  {"id": "mid_combo_4", "role": "mid", "description": "Убейте 8 врагов, сделайте 8 ассистов и заработайте 15000 золота на {hero_name}", "requirement": {"kills": {"gt": 8}, "assists": {"gt": 8}, "net_worth": {"gt": 15000}}, "difficulty": "hard", "reward_exp": 65},
+  {"id": "mid_combo_5", "role": "mid", "description": "Убейте 18 врагов, умрите менее 3 раз и сделайте 10 ассистов на {hero_name}", "requirement": {"kills": {"gt": 18}, "deaths": {"lt": 3}, "assists": {"gt": 10}}, "difficulty": "impossible", "reward_exp": 145},
+  
+  {"id": "universal_win_2", "role": null, "description": "Одержите 2 победы на {hero_name} за день", "requirement": {"wins": 2}, "difficulty": "lite", "reward_exp": 30},
+  {"id": "universal_win_3", "role": null, "description": "Одержите 3 победы на {hero_name} за день", "requirement": {"wins": 3}, "difficulty": "hard", "reward_exp": 60},
+  {"id": "universal_win_4", "role": null, "description": "Одержите 4 победы на {hero_name} за день", "requirement": {"wins": 4}, "difficulty": "impossible", "reward_exp": 100},
+  
+  {"id": "universal_win_series_2", "role": null, "description": "Сделайте серию из 2 побед подряд на {hero_name}", "requirement": {"win_series": 2}, "difficulty": "hard", "reward_exp": 50},
+  {"id": "universal_win_series_3", "role": null, "description": "Сделайте серию из 3 побед подряд на {hero_name}", "requirement": {"win_series": 3}, "difficulty": "impossible", "reward_exp": 90},
+  {"id": "universal_win_series_4", "role": null, "description": "Сделайте серию из 4 побед подряд на {hero_name}", "requirement": {"win_series": 4}, "difficulty": "impossible", "reward_exp": 130},
+  
+  {"id": "universal_networth_20k_no_deaths", "role": null, "description": "Заработайте 20000 золота и не умрите ни разу на {hero_name}", "requirement": {"net_worth": {"gt": 20000}, "deaths": {"lt": 1}}, "difficulty": "impossible", "reward_exp": 150},
+  {"id": "universal_kill_10_networth_15k", "role": null, "description": "Убейте 10 врагов и заработайте 15000 золота на {hero_name}", "requirement": {"kills": {"gt": 10}, "net_worth": {"gt": 15000}}, "difficulty": "hard", "reward_exp": 70},
+  {"id": "universal_kill_5_assist_10", "role": null, "description": "Убейте 5 врагов и сделайте 10 ассистов на {hero_name}", "requirement": {"kills": {"gt": 5}, "assists": {"gt": 10}}, "difficulty": "lite", "reward_exp": 40},
+  
+  {"id": "carry_no_deaths_kill_8", "role": "carry", "description": "Убейте 8 врагов и не умрите ни разу на {hero_name}", "requirement": {"kills": {"gt": 8}, "deaths": {"lt": 1}}, "difficulty": "impossible", "reward_exp": 100},
+  {"id": "support_assist_12_no_deaths", "role": "support", "description": "Сделайте 12 ассистов и не умрите ни разу на {hero_name}", "requirement": {"assists": {"gt": 12}, "deaths": {"lt": 1}}, "difficulty": "impossible", "reward_exp": 110},
+  {"id": "mid_kill_10_no_deaths", "role": "mid", "description": "Убейте 10 врагов и не умрите ни разу на {hero_name}", "requirement": {"kills": {"gt": 10}, "deaths": {"lt": 1}}, "difficulty": "impossible", "reward_exp": 105},
+  
+  {"id": "carry_gpm_600", "role": "carry", "description": "Достигните 600 GPM в матче на {hero_name}", "requirement": {"gpm": {"gt": 600}}, "difficulty": "hard", "reward_exp": 70},
+  {"id": "carry_gpm_700", "role": "carry", "description": "Достигните 700 GPM в матче на {hero_name}", "requirement": {"gpm": {"gt": 700}}, "difficulty": "impossible", "reward_exp": 120},
+  {"id": "mid_gpm_550", "role": "mid", "description": "Достигните 550 GPM в матче на {hero_name}", "requirement": {"gpm": {"gt": 550}}, "difficulty": "hard", "reward_exp": 65},
+  {"id": "mid_gpm_650", "role": "mid", "description": "Достигните 650 GPM в матче на {hero_name}", "requirement": {"gpm": {"gt": 650}}, "difficulty": "impossible", "reward_exp": 110},
+  {"id": "support_gpm_350", "role": "support", "description": "Достигните 350 GPM в матче на {hero_name}", "requirement": {"gpm": {"gt": 350}}, "difficulty": "hard", "reward_exp": 60},
+  {"id": "support_gpm_400", "role": "support", "description": "Достигните 400 GPM в матче на {hero_name}", "requirement": {"gpm": {"gt": 400}}, "difficulty": "impossible", "reward_exp": 90},
+  
+  {"id": "carry_xpm_600", "role": "carry", "description": "Достигните 600 XPM в матче на {hero_name}", "requirement": {"xpm": {"gt": 600}}, "difficulty": "hard", "reward_exp": 65},
+  {"id": "carry_xpm_700", "role": "carry", "description": "Достигните 700 XPM в матче на {hero_name}", "requirement": {"xpm": {"gt": 700}}, "difficulty": "impossible", "reward_exp": 115},
+  {"id": "mid_xpm_600", "role": "mid", "description": "Достигните 600 XPM в матче на {hero_name}", "requirement": {"xpm": {"gt": 600}}, "difficulty": "hard", "reward_exp": 60},
+  {"id": "mid_xpm_700", "role": "mid", "description": "Достигните 700 XPM в матче на {hero_name}", "requirement": {"xpm": {"gt": 700}}, "difficulty": "impossible", "reward_exp": 110},
+  {"id": "support_xpm_450", "role": "support", "description": "Достигните 450 XPM в матче на {hero_name}", "requirement": {"xpm": {"gt": 450}}, "difficulty": "hard", "reward_exp": 55},
+  {"id": "support_xpm_550", "role": "support", "description": "Достигните 550 XPM в матче на {hero_name}", "requirement": {"xpm": {"gt": 550}}, "difficulty": "impossible", "reward_exp": 85}
 ]
